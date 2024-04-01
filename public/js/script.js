@@ -110,19 +110,7 @@ document.addEventListener('DOMContentLoaded', function () {
     return 'Apologies :( unable to provide; consider exploring other options.';
     }
     }
-    // Function to display a message in the chat
-    // function displayMessage(data) {
-    // const messageElement = document.createElement('div');
-    // const timestamp = new Date().toLocaleTimeString();
-    // messageElement.classList.add('message');
-    // messageElement.innerHTML = `<strong>${data.user}:   </strong>${data.message}<br>
-    // <strong>${data.server1}:   </strong>${data.messageAI}<br>
-    // <span class="timestamp">${timestamp}</span><br><br>`;
-    // chatOutput.appendChild(messageElement);
-    // // Scroll to the bottom of the chat
-    // chatOutput.scrollTop = chatOutput.scrollHeight;
-    // }
-    // });
+   
 
 
       // Function to display a message in the chat
