@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+      <title>Fitness_chatbot</title>
+      <link rel="shortcut icon" type="image" href="Workout-logo-Fitness-aerobic-workout-Graphics-40080485-1-1-580x386.png">
+    <script src="https://kit.fontawesome.com/d48e1b2668.js" crossorigin="anonymous"></script>
+
+
+
+<style>
+    @import url(https://fonts.gstatic.com/s/raleway/v29/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCFPrEHJA.woff2);
+
+  * {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 30px auto 0px auto;
+  width: 80%; 
+  box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+.flex-item-left{
+  /* padding: 10px; */
+  flex: 21%; 
+  background-color: #eaeaea;
+}
+
+.flex-item-left img{
+    width: 350px;
+    height: 475px;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.flex-item-right {
+  /* padding: 10px; */
+  flex: 60%;
+  background-color: #eaeaea;
+}
+
+@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+  .flex-item-right {
+    padding: 10px;
+  }
+}
+
+/* ..................datalist */
+#browsers option{
+    background-color: aqua;
+}
+
+
+/* ..............footer */
+#footer{
+background-color: #eaeaea;
+margin: 0px;
+margin-top: 0px;
+padding: 5px;
+width: 80%;
+margin-bottom: 30px;
+margin-left: 10%;
+background-color: black;
+color: white;
+border-radius: 0px 0px 30px 30px;
+}
+
+#footer h1{
+    font-size: smaller;
+    text-transform: uppercase;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+.iconGmailPhone i{
+    padding: 0px 10px 0px 10px;
+}
+
+.iconGmailPhone p{
+    font-size: small;
+}
+
+.iconGmailPhone{
+  margin-top: 20px;
+  margin-left: 21%;
+  color: rgb(213, 213, 213);
+  }
+
+@media (max-width: 800px) {
+  .iconGmailPhone{
+    margin-left: 0px;
+  }
+  .fa-brands{
+    margin-top: 25px;
+  }
+  .fa-square-facebook {
+    margin-left: 25%;
+  }
+}
+
+.fa-brands{
+color: rgb(150, 150, 150);
+}
+.fa-brands:hover{
+color: rgb(255, 255, 255);
+}
+
+.healthThought{
+  color: gold; 
+  font-weight: bold;
+  margin: 0px;
+}
+.healthThought p{
+  text-align: center;
+}
+
+.yogaLogo img{
+  width: 120px;
+  height: auto;
+  margin-left: 45%;
+}
+.yogaLogo{
+  margin-top: 0px;
+}
+@media (max-width: 800px) {
+  .yogaLogo img {
+    margin-left: 39%;
+  }
+}
+
+
+
+
+
+</style>
+
+
+</head>
+<body>
+
+    <!-- main container -->
+    <div class="flex-container">
+
+        <!-- left container -->
+        <div class="flex-item-left">
+            <img src="https://i.pinimg.com/564x/6f/7f/00/6f7f002468054e0a1e25697774c29760.jpg">
+        </div>
+
+        <!-- right container -->
+        <div class="flex-item-right">
+
+            <div id="chat-container">
+                <div id="chat-header">
+                    <h1>WellnessWise HealthMate Guru</h1>
+                </div>
+                <div id="chat-output"></div>
+
+                <div id="input-container">
+
+                    <input type="text" list="browsers" name="browser" id="message-input" placeholder="health and fitness consulting...">
+                    <datalist id="browsers">
+                      <option value="Tips for maintaining a healthy lifestyle">
+                      <option value="Quantity of water to consume each day">                      
+                      <option value="Quick and healthy snack options">
+                      <option value="Tips to reduce stress in daily life">
+                      <option value="importance of regular exercise">
+                      <option value="How to improve my sleep quality">
+                      <option value="Signs of dehydration">
+                      <option value="How to quit smoking">
+                      <!-- <option value="Something different"> -->
+                      </datalist>
+                      
+
+                    
+           
+                  <button id="send-button">Send</button>
+      
+                  <button id="reset-button">Reset</button>
+                </div>
+
+               
+        
+
+      </div>
+      </div>
+
+      </div>
+
+      <div id="footer">
+        <h1>Connect with us and let's achieve better health together</h1>
+        <div class="iconGmailPhone">
+            <p><i class="fa-solid fa-envelope" style="display: inline-block;"></i>WellnessWiseHealthMate@gmail.com  <i class="fa-solid fa-phone-volume"></i>8788367869  
+               
+              <a class="a-icon" href="#"><i class="fa-brands fa-square-facebook fa-beat fa-xl"></i></a>
+              <a class="a-icon" href="#"><i class="fa-brands fa-square-instagram fa-beat fa-xl"></i></a>
+              <a class="a-icon" href="#"><i class="fa-brands fa-square-x-twitter fa-beat fa-xl"></i></a>
+              <a class="a-icon" href="#"><i class="fa-brands fa-square-whatsapp fa-beat fa-xl"></i></a>
+              <a class="a-icon" href="www.linkedin.com/in/rohini-mudpalliwar-86807a219"><i class="fa-brands fa-linkedin fa-beat fa-xl"></i></a>
+             
+            </p> 
+        </div>
+        <div class="healthThought"><p>"Health is the invaluable currency of life, influencing our ability to enjoy, achieve, and savor every moment."</p></div>
+      </div>
+
+        <div class="yogaLogo"><img src="https://www.indianpolitics.co.in/wp-content/uploads/2019/08/1725178-group-yoga-png-soukhyam-ayurvedic-naturopathy-in-jpg-freeuse-yoga-png-390_462_preview.png"></div>
+
+      <!-- footer....................................................... -->
+      <!-- <div id="footer">
+        <h1>connect with us</h1>
+        <div class="iconGmailPhone">
+            <p><i class="fa-solid fa-envelope"></i>rohinimudpalliwar18@gmail.com</p> 
+            <p><i class="fa-solid fa-phone-volume"></i>8788344769</p>
+        </div>
+        <ul class="ul2">
+            <li><a class="a-icon" href="#"><i class="fa-brands fa-square-facebook fa-beat fa-2xl"></i></a></li>
+            <li><a class="a-icon" href="#"><i class="fa-brands fa-square-instagram fa-beat fa-2xl"></i></a></li>
+            <li><a class="a-icon" href="#"><i class="fa-brands fa-square-x-twitter fa-beat fa-2xl"></i></a></li>
+            <li><a class="a-icon" href="#"><i class="fa-brands fa-square-whatsapp fa-beat fa-2xl"></i></a></li>
+            <li><a class="a-icon" href="www.linkedin.com/in/rohini-mudpalliwar-86807a219"><i class="fa-brands fa-linkedin fa-beat fa-2xl"></i></a></li>
+        </ul>
+
+    </div> -->
+
+
+
+            <!-- simple input text area...................................... -->
+            <!-- <input type="text" id="message-input" placeholder="Type your message..."> -->
+
+            <!-- dropdown menu type input area..................................... -->
+            <!-- <select id="message-input" placeholder="Type your message..." name="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+              </select> -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

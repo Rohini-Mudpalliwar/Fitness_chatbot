@@ -1,0 +1,115 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    background-image: linear-gradient(to right,rgb(1, 53, 73), black, rgb(1, 53, 73));
+
+}
+
+#chat-container {
+    /* max-width: 550px; */
+    /* margin: 20px; */
+    overflow: hidden;
+}
+
+
+#chat-header {
+    background-image: linear-gradient(to top right, #eaeaea,#9e9d9d);
+    /* color: cadetblue; */
+    color: #000000;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+}
+
+#chat-output {
+    height: 350px;
+    overflow-y: scroll;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    /* background-image: linear-gradient(to top right, #eaeaea,#a6a6a6); */
+    background-image: url(https://i.pinimg.com/736x/70/19/66/701966f42d5895f203c4d90b2068de04.jpg);
+    background-image: url(https://i.pinimg.com/564x/56/e5/90/56e59070f4122ec1a6599971c0513a60.jpg);
+    background-size: cover;
+    font-size: small;
+    text-align: start;
+    /* margin: 10px; */
+    margin: 10px 10px 2px 10px;
+
+}
+
+#input-container {
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    background-color: transparent;
+}
+
+#message-input {
+    width: 80%;
+    margin: 2px;
+    margin-left: 8px;
+    padding: 6px;
+    /* border-radius: 10px; */
+    /* background-color: yellowgreen; */
+    background-image: linear-gradient(to right, black white, black);
+    border: 2px solid black;
+}
+
+#send-button {
+    width: 15%;
+    border: none;
+    background-image: linear-gradient(to right,rgb(6, 106, 136), rgb(31, 157, 159));
+/* color: cadetblue;
+color: lightblue; */
+    color: #000000;
+    cursor: pointer;
+    margin: 3px;
+    margin-right: 0px;
+    font-weight: bolder;
+    border-radius: 5px 0px 0px 5px;
+    
+}
+
+#send-button:hover {
+    color: black;
+    font-weight: bolder;
+    background-image: linear-gradient(to right,rgb(31, 159, 125), rgb(21, 101, 102));
+
+}
+
+#reset-button {
+    width: 15%;
+    border: none;
+    background-image: linear-gradient(to left,rgb(6, 106, 136), rgb(31, 157, 159));
+
+    color: #000000;
+    cursor: pointer;
+    margin: 3px;
+    margin-left: 0px;
+    margin-right: 25px;
+    font-weight: bolder;
+    border-radius: 0px 5px 5px 0px;
+}
+
+#reset-button:hover {
+    color: black;
+    font-weight: bolder;
+    background-image: linear-gradient(to left,rgb(31, 159, 125), rgb(21, 101, 102));
+
+}
+
+.timestamp{
+    margin-left: 90%;
+    /* font-size: small; */
+    font-size:10px ;
+    color: gold;
+}
+
+@media (max-width: 800px) {
+    .timestamp {
+      margin-left: 80%;
+    }
+}
